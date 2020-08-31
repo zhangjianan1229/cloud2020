@@ -13,9 +13,10 @@ spring:
     config:
       server:
         git:
-#          uri: https://github.com/zhangjianan1229/springcloud-config.git
+          uri: https://github.com/zhangjianan1229/springcloud-config.git
 #          uri: git@github.com:zhangjianan1229/springcloud-config.git
-          uri: git@github.com:zzyybs/springcloud-config.git
+#          uri: git@github.com:zzyybs/springcloud-config.git
+#          uri: https://github.com/zzyybs/springcloud-config.git
           search-paths:
             - springcloud-config
       label: master
