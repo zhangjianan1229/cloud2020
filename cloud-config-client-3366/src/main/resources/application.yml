@@ -1,0 +1,23 @@
+server:
+  port: 3366
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+spring:
+  application:
+    name: cloud-config-client
+  cloud:
+    config:
+      label: master
+      name: config
+      profile: dev
+      uri: http://localhost:3344
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
