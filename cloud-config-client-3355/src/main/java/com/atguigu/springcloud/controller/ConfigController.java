@@ -12,9 +12,12 @@ public class ConfigController {
     @Value("${config.info}")
     private String configInfo;
 
+    @Value("${server.port}")
+    private String serverPort;
+
     @GetMapping("/config/get")
     public String getConfigInfo() {
-        return configInfo;
+        return "端口：" + serverPort + ",github上yml为：" + configInfo;
     }
 
 }
