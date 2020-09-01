@@ -20,3 +20,14 @@ spring:
           search-paths:
             - springcloud-config
       label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
